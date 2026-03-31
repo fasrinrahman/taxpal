@@ -7,3 +7,14 @@ hamburger.addEventListener("click", ()=>{
   mobileMenu.classList.toggle("open");
 //   console.log("Toggle btn accessed");
 });
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    // remove "open" from mobileMenu
+    mobileMenu.classList.remove("open");
+    console.log("ESc btn clicked to go back");
+    
+  }
+});
+
+
