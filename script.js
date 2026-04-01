@@ -72,27 +72,29 @@ feature_tabs.forEach((feature_tab, index) => {
 
   // queryselectorAll return nodellist - we can use for loop [tabs]
   simplify_cards.forEach((simplify_card, index) => {
+    simplify_card_head = document.querySelectorAll(".simplify_card_head");
+    simplify_card_subhead = document.querySelectorAll(".simplify_card_subhead");
+    simplify_card_text = document.querySelectorAll(".simplify_card_text");
+    simplify_card_icon = document.querySelectorAll(".simplify_card_icon");
+
     simplify_card.addEventListener("click", () => {
       // remove the active styles from all other tabs
       simplify_cards.forEach((card_ele) => {
         card_ele.classList.remove(
           "active",
-          "bg-white/10",
-          "ring-1",
-          "ring-white/10",
-          "ring-inset",
+          "bg-blue-600",
+          "text-blue-600",
+          "text-zinc-400",
         );
         // assign the active classes to the clicked tab
-        simplify_card.classList.add(
-          "active",
-          "bg-white/10",
-          "ring-1",
-          "ring-white/10",
-          "ring-inset",
-        );
+        simplify_card.classList.add("active");
+        simplify_card_head[index].classList.add("text-blue-600");
+        simplify_card_subhead[index].classList.add("text-blue-600");
+        simplify_card_text[index].classList.add("text-zinc-400");
+        simplify_card_icon[index].classList.add("bg-blue-600");
       });
 
-      // change screan shot by clicking to reaalted image  with its index
+      // change image by clicking to reaalted image  with its index
       simplify_images.src = simplify_images_arr[index];
     });
   });
