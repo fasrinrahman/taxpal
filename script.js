@@ -65,9 +65,9 @@ feature_tabs.forEach((feature_tab, index) => {
 
   const simplify_images_arr = [
     // img1, img2 .. with tab order in notion
-    "https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpayroll.948a58d4.png&w=3840&q=75",
-    "https://salient.tailwindui.com/_next/image?url=%2F_next%2F/static%2Fmedia%2Fexpenses.6dca4b99.png&w=3840&q=75",
-    "https://salient.tailwindui.com/_next/image?url=%2F_next%2F/static%2Fmedia%2Fvat-returns.90e74b9d.png&w=3840&q=75",
+    "https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofit-loss.32a24c33.png&w=1080&q=75",
+    "https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Finventory.6022a851.png&w=1080&q=75",
+    "https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontacts.1c490a2c.png&w=1080&q=75",
   ];
 
   // queryselectorAll return nodellist - we can use for loop [tabs]
