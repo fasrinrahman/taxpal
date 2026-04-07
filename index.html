@@ -6,7 +6,12 @@
     <title>Taxpal Website Project - 2026</title>
     <!--Link the Tailwind CSS [CDN] -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- no custom css for now -->
+    <!--  custom css for now -->
+    <style>  
+      .mobile-menu { display: none; }
+      .mobile-menu.open { display: block; }
+    </style>
+      
   </head>
   <body>
     <!-- nav bar start here -->
@@ -81,7 +86,7 @@
 
         <!-- mobile toggling humburger button -->
         <button
-          class="hamburger lg:hidden flex items-center justify-center rounded-lg p-2 text-slate-700 hover:bg-slate-100"
+          class="hamburger mobile-menu lg:hidden flex items-center justify-center rounded-lg p-2 text-slate-700 hover:bg-slate-100"
           aria-label="Open menu"
         >
           <svg

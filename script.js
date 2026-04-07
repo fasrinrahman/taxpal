@@ -5,7 +5,7 @@ const mobileMenu = document.querySelector(".mobile-menu");
 
 hamburger.addEventListener("click", () => {
   mobileMenu.classList.toggle("open");
-  //   console.log("Toggle btn accessed");
+  console.log("Toggle btn accessed");
 });
 
 document.addEventListener("keydown", (e) => {
