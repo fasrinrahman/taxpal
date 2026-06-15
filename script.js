@@ -99,3 +99,13 @@ feature_tabs.forEach((feature_tab, index) => {
     });
   });
 });
+
+const subBtn = document.querySelector(".subcribtion");
+// console.log(subBtn);
+
+const heroClss = document.querySelector(".hero-cls")
+console.log(heroClss);
+
+subBtn.addEventListener("click", ()=>{
+  heroClss.style.backgroundColor = '#00f';
+})
